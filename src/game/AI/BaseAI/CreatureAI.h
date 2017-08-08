@@ -352,6 +352,9 @@ class CreatureAI
          */
         virtual void ReceiveAIEvent(AIEventType /*eventType*/, Creature* /*pSender*/, Unit* /*pInvoker*/, uint32 /*miscValue*/) {}
 
+        void CheckForHelp(Unit* /*who*/, Creature* /*me*/, float /*dist*/);
+        void DetectOrAttack(Unit* /*who*/, Creature* /*me*/);
+
     protected:
         void HandleMovementOnAttackStart(Unit* victim) const;
 
